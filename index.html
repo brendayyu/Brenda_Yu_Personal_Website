@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="static/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenda Yu</title>
+    <meta name="author" content="Brenda Yu">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Brenda Yu professional website">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">Brenda Yu</h1>
+        <nav>
+            <a class="navy" href="index.html">Home</a>
+            <a class="navy" href="views/cv.html">CV</a>
+            <a class="navy" href="views/fun.html">For Fun</a>
+            <a class="navy" href="views/contact.html">Contact Me</a>
+        </nav>
+        <div class="main">
+            <h2 id="greeting"></h2>
+            <img src="static/IMG_0274.JPG" alt = "A picture of Brenda."
+                width="400"
+                height="auto" />
+            <p id="intro">
+                Hi, I'm Brenda and I am a sophomore at Carnegie Mellon University!
+                <button id="readMoreLink" class="readMore"><a href="javascript:void(0);">Read More...</a></button>
+            </p>
+            <p id="bio">
+                I am currently studying Information Systems and Human Computer Interaction
+                and a minor in Architecture. I am involved with student clubs and organizations on campus such as User-Experience Association,
+                Women in Business, Asian Student Association, and Club Swimming. 
+                <button id="readLessLink" class="readLess"><a href="javascript:void(0);">Read Less...</a></button>
+            </p>
+        </div>
+    </header>
+    <footer>
+        <p id = "copyYear"> designed and coded by Brenda Yu &copy; </p>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $("#readMoreLink a").click(function() {
+                $("#bio").show();
+                $("#readMoreLink").hide();
+                $("#readLessLink").show();
+            });
+            $("#readLessLink a").click(function() {
+                $("#bio").hide();
+                $("#readMoreLink").show();
+                $("#readLessLink").hide();
+            });
+        })
+    </script>
+</body>
+</html>
