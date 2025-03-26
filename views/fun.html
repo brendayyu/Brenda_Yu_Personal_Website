@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="../static/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Brenda Yu">
+    <meta name = "keywords" content = "Carnegie Mellon University, Information Systems">
+    <meta name = "description" content = "Brenda Yu profressional website">
+    <title>Brenda Yu</title>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">Brenda Yu</h1>
+        <nav>
+            <a class="navy" href="../index.html">Home</a>
+            <a class="navy" href="cv.html">CV</a>
+            <a class="navy" href="fun.html">For Fun</a>
+            <a class="navy" href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <div class="funMain">
+        <div id="item1">
+            <h2>Things I Love To Do For Fun</h2>
+
+            <!-- <button id="showButton" onclick="showList()">Click to see...</button> -->
+            <ul id="favList">
+                <li>Weightlifting and being active</li>
+                <li>Watching the sunset</li>
+                <li>Eating and hanging out with my friends</li>
+                <li>Listening to music and going to concerts</li>
+            </ul>
+        </div>
+        <div id="item2">
+            <img class="funIMG" src="../static/dawg.jpg" alt="a pic of my dog" width="300px"/>
+        </div>
+        <div id="item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rOG61a1bay4?si=xuO2oClnZ6Zd2Rl6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="item4">
+            <div class="container">
+                <h2>Looks like you need some advice...</h2>
+                <p id="adviceText">...so click the button!</p>
+                <button id="adviceButton" onclick="getAdvice()">Get Advice!!!</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="copyYear"> designed and coded by Brenda Yu &copy; </p>
+    </footer>
+    
+</body>
+</html>

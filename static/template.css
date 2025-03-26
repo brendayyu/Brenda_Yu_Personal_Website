@@ -1,0 +1,61 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:'header header'
+                        'nav nav'
+                        'figure side'
+                        'bottom-content bottom-content'
+                        'footer footer';
+}
+
+header {
+    grid-area: header;
+    background-color: beige;
+}
+
+nav {
+    grid-area: nav;
+    background-color:lightpink;
+}
+
+main {
+    background-color:azure;
+}
+
+figure {
+    grid-area: figure;
+    background-color:rgb(250, 185, 159);
+    height: 30vh;
+}
+
+figure img {
+    width: auto;
+    height: 90%;
+    object-fit: contain;
+}
+
+side {
+    grid-area: side;
+    background-color:lavender;
+}
+
+summary {
+    grid-area: bottom-content;
+    background-color:rgb(191, 241, 191);
+}
+
+footer {
+    grid-area: footer;
+    background-color:lightcyan;
+}
+
+@media screen and (max-width: 650px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:'header'
+                            'nav'
+                            'figure'
+                            'side'
+                            'bottom-content'
+                            'footer';
+    }
+}
